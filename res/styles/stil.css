@@ -1,5 +1,6 @@
-	html{
-		font-size: 16px;
+	
+html{
+		font-size: 1.3rem;
 		}
 		
 	*{ /* resetarea spatierilor */
@@ -7,30 +8,30 @@
 		padding:0px;
 		text-indent:0px;
 	}
-	
-
-	main{
-	
-		padding-right:10%;
-		padding-top:100px;
+	body{
+		width: 100%;
+		display:block;
 	}
+
 	header{
 		top:0px;
         width: 100%;
         position: fixed;        
         background: #FFFF66;
-        padding: 10px 0;
 	}
 
-/* ------------coloane ------------------*/
-
-
-/* ------------meniu ------------------*/
 	nav{
-		width:200%;
 		position:fixed;
+		width:100%;
 	}
-
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	h2{
+		text-align:center;
+	}
+		
 	ul.menu>li, ul.menu>li>ul.submenu>li{
 		display:block;
 		
@@ -44,7 +45,7 @@
 	}
 	ul.menu>li{
 	 float:left;
-	 width:12.5%;
+	 width:25%;
 	}
 	ul.submenu>li{
 	 width:100%;
@@ -87,6 +88,9 @@
 	
 	
 	@media screen and (min-width:400px) and (max-width:700px){
+		main{
+			background:lightgrey;
+		}
 		p.text{
 		float:none;
 		width:100%;
@@ -120,6 +124,30 @@
 			border:none;
 		}
 	}
-	/* ce stil se aplica pentru width-ul ferestrei egal cu 400px? */
+	@media screen and (min-width:700px) {
+		main {
+			padding-top: 4.5rem;
+			display: flex;
+			background: #1E90FF;
+			min-height:90vh;
+			
+		}
+		#bgr1 {
+			flex-basis: 25%;
+			background: #FFFF66;
+		}
+		#pgcontent {
+			flex-basis: 50%;
+			background: lightgrey;
+		}
+		#bgr2 {
+			flex-basis:25%;
+			background: #1E90FF;
+		}
+		body {
+			background: #1E90FF;
+		}
+	}
+
 	
 	
