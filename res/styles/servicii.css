@@ -6,6 +6,11 @@
         background-color: #1E90FF;
     }
 
-p:hover {
-    background-color: #1E90FF;
-}
+    p:hover {
+        background-color: #1E90FF;
+    }
+    @media screen and (max-width:400px) {
+        .produse {
+            display: block;
+        }
+    }
