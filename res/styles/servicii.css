@@ -1,4 +1,11 @@
-﻿.produse{
-    display: grid;
-    grid-template-columns: auto auto;
+﻿    .produse{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .produse div:hover {
+        background-color: #1E90FF;
+    }
+
+p:hover {
+    background-color: #1E90FF;
 }
