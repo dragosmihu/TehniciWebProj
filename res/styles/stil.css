@@ -1,9 +1,11 @@
-	
-html{
-		font-size: 1.3rem;
-		}
+
+html {
+	font-size: 1.3rem;
+	font-family: 'Helvetica';
+	scroll-padding-top: 100px;
+}
 		
-	*{ /* resetarea spatierilor */
+	*{ 
 		margin:0px;
 		padding:0px;
 		text-indent:0px;
@@ -12,14 +14,11 @@ html{
 		width: 100%;
 		display:block;
 	}
-
 	header{
-		top:0px;
         width: 100%;
         position: fixed;        
         background: #FFFF66;
 	}
-
 	nav{
 		position:fixed;
 		width:100%;
@@ -31,18 +30,42 @@ html{
 	h2{
 		text-align:center;
 	}
-		
-	ul.menu>li, ul.menu>li>ul.submenu>li{
-		display:block;
-		
-		font-size:1.2rem;
-		font-weight:bold;
-		height:1.2rem;
-		line-height:1.2rem;
-		text-align:center;		
-		list-style-type:none;
-		overflow:hidden;
+#pgcontent {
+	background-image: linear-gradient(to right,#FFFF66, #1E90FF);
+}
+p {
+	border: 1px solid lightyellow;
+	border-radius: 100px;
+	overflow: auto;
+	padding: 1.9rem;
+	background-image:none;
+	background-color:lightgrey;
+	margin:14px;
+}
+#promotii p{
+	border:none;
+}
+#promotii {
+	border: 1px solid lightyellow;
+	border-radius: 100px;
+	overflow: auto;
+	padding: 1.9rem;
+	background-image: none;
+	background-color: lightgrey;
+}
+	ul{
+		list-style-position:inside;
 	}
+		ul.menu > li, ul.menu > li > ul.submenu > li {
+			display: block;
+			font-size: 1.2rem;
+			font-weight: bold;
+			height: 1.2rem;
+			line-height: 1.2rem;
+			text-align: center;
+			list-style-type: none;
+			overflow: hidden;
+		}
 	ul.menu>li{
 	 float:left;
 	 width:25%;
@@ -83,22 +106,13 @@ html{
 	ul.menu>li:hover{
 		overflow:visible;
 	}
-	
-	
+
+	main {
+		background: lightgrey;
+	}
 	
 	
 	@media screen and (min-width:400px) and (max-width:700px){
-		main{
-			background:lightgrey;
-		}
-		p.text{
-		float:none;
-		width:100%;
-		}
-		figure.img-wrap{
-		width:100%;
-		}
-		
 		ul.menu>li{
 		 width:25%;
 		}
@@ -108,46 +122,70 @@ html{
 			position:absolute;
 			left:0px;
 			top:1.2rem;
-			border-top:1px solid magenta;
-			border-bottom:1px solid black;
+			border-top:1px solid blue;
+			border-bottom:1px solid yellow;
 		}
-		
-		ul.menu>li:nth-of-type(even):hover ul.submenu{
-				background:pink;
-		}
-		ul.menu>li:nth-of-type(odd):hover ul.submenu{
-				background:lightblue;
-		}
+
+			ul.menu > li:nth-of-type(even):hover ul.submenu {
+				background: #1E90FF;
+			}
+			ul.menu > li:nth-of-type(odd):hover ul.submenu {
+				background: #FFFF66;
+			}
 		ul.menu>li:hover ul.submenu>li{
+			font-size:0.9rem;
 			float:left;
-			width:15%;
+			width:20%;
 			border:none;
+		}
+		main {
+			padding-top: 6.8rem;
+		}
+
+		body {
+			background-color: #1E90FF;
+		}
+		html {
+			scroll-padding-top: 140px;
 		}
 	}
 	@media screen and (min-width:700px) {
 		main {
 			padding-top: 4.5rem;
 			display: flex;
-			background: #1E90FF;
 			min-height:90vh;
 			
 		}
 		#bgr1 {
 			flex-basis: 25%;
-			background: #FFFF66;
+			background-color: #FFFF66;
+			background-image: url("../imag/fotbalist.png");
+			background-repeat: round;
 		}
 		#pgcontent {
 			flex-basis: 50%;
-			background: lightgrey;
+			left: 5px;
+			text-indent: 5%;
 		}
 		#bgr2 {
-			flex-basis:25%;
+			flex-basis: 25%;
 			background: #1E90FF;
+			background-image: url("../imag/baschet.png");
+			background-repeat: round;
 		}
 		body {
 			background: #1E90FF;
 		}
 	}
-
-	
+@media screen and (max-width:400px){
+	html {
+		scroll-padding-top: 150px;
+	}
+	main {
+		padding-top: 6.9rem;
+	}
+	body {
+		background-color: #1E90FF;
+	}
+}
 	
