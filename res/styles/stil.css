@@ -118,80 +118,135 @@
 		border-collapse: collapse;
 		empty-cells: show;
 	}
-	@media screen and (min-width:400px) and (max-width:700px){
-		ul.menu>li{
-		 width:25%;
+@media screen and (min-width:400px) and (max-width:700px) {
+	ul.menu > li:hover ul.submenu {
+		width: 100vw;
+		position: absolute;
+		left: 0px;
+		top: 4rem;
+		border-top: 1px solid blue;
+		border-bottom: 1px solid yellow;
+	}
+	
+
+	main {
+		padding-top: 4rem;
+	}
+
+	aside {
+		font-size: 2.3vw;
+	}
+
+	body {
+		background-color: #1E90FF;
+	}
+
+	html {
+		scroll-padding-top: 140px;
+	}
+
+	ul.menu > li:nth-of-type(even):hover ul.submenu {
+		background: #1E90FF;
+	}
+
+	ul.menu > li:nth-of-type(odd):hover ul.submenu {
+		background: #FFFF66;
+	}
+
+	ul.menu > li:hover ul.submenu > li {
+		font-size: 0.9rem;
+		float: left;
+		width: 20%;
+		border: none;
+	}
+}
+	@media screen and (min-width:700px) and (max-width:1000px) {
+		ul.menu > li {
+			width: 25%;
 		}
 
-		ul.menu>li:hover ul.submenu{
-			width:100vw;
-			position:absolute;
-			left:0px;
-			top:1.2rem;
-			border-top:1px solid blue;
-			border-bottom:1px solid yellow;
-		}
+			ul.menu > li:hover ul.submenu {
+				width: 100vw;
+				position: absolute;
+				left: 0px;
+				top: 4.5rem;
+				border-top: 1px solid blue;
+				border-bottom: 1px solid yellow;
+			}
 
-		ul.menu > li:nth-of-type(even):hover ul.submenu {
-			background: #1E90FF;
-		}
-		ul.menu > li:nth-of-type(odd):hover ul.submenu {
-			background: #FFFF66;
-		}
-		ul.menu>li:hover ul.submenu>li{
-			font-size:0.9rem;
-			float:left;
-			width:20%;
-			border:none;
-		}
+			ul.menu > li:nth-of-type(even):hover ul.submenu {
+				background: #1E90FF;
+			}
+
+			ul.menu > li:nth-of-type(odd):hover ul.submenu {
+				background: #FFFF66;
+			}
+
+			ul.menu > li:hover ul.submenu > li {
+				font-size: 0.9rem;
+				float: left;
+				width: 20%;
+				border: none;
+			}
+
 		main {
 			padding-top: 4rem;
 		}
+
 		aside {
 			font-size: 2.3vw;
-		}	
+		}
+
 		body {
 			background-color: #1E90FF;
 		}
+
 		html {
 			scroll-padding-top: 140px;
 		}
 	}
-	@media screen and (min-width:700px) {
+
+	@media screen and (min-width:1000px) {
 		main {
 			padding-top: 4.5rem;
 			display: flex;
-			min-height:90vh;
-			
+			min-height: 90vh;
 		}
+
 		#bgr1 {
 			flex-basis: 25%;
 			background-color: #FFFF66;
 			background-image: url("../imag/fotbalist.png");
 			background-repeat: round;
 		}
+
 		#pgcontent {
 			flex-basis: 50%;
 			left: 5px;
 			text-indent: 5%;
 		}
+
 		#bgr2 {
 			flex-basis: 25%;
 			background: #1E90FF;
 			background-image: url("../imag/baschet.png");
 			background-repeat: round;
 		}
+
 		body {
 			background: #1E90FF;
 		}
 	}
-	@media screen and (max-width:400px){
+
+	@media screen and (max-width:400px) {
 		html {
 			scroll-padding-top: 150px;
 		}
+
 		main {
 			padding-top: 4.5rem;
 		}
+
 		body {
 			background-color: #1E90FF;
 		}
